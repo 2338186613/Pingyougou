@@ -1,0 +1,242 @@
+/* 头部 */
+header {
+  position: relative;
+}
+
+/* 快捷菜单栏 */
+.shortcut {
+  width: 100%;
+  height: 33px;
+  background-color: #f1f1f1;
+  line-height: 33px;
+  /*垂直居中*/
+  font-size: 14px;
+  color: #333;
+}
+
+.welcome a {
+  color: var(--cl);
+  /*使用属性变量*/
+}
+
+.welcome a:hover {
+  color: #333;
+}
+
+.shortcut-right ul li {
+  float: left;
+  /*让li标签的内容排在一行上*/
+}
+
+/* .shortcut-right a{
+  color: #333;
+} */
+.shortcut-right a:hover {
+  color: #666;
+}
+
+.shortcut-right span {
+  margin: 0 10px 0 5px;
+  /* 设置外边距。margin：10px表示上下左右都为10px margin:10px 20px表示上下为10px，左右为20px；  margin：10px 20px 30px表示上为10px，左右为20px，下为30px；margin：10px 20px 30px 40px表示上为10px，右为20px，下为30px，左为40px*/
+}
+
+/* Logo区 */
+.logo-area {
+  overflow: hidden;
+  /*清除浮动*/
+}
+
+.logo-area h1 {
+  margin: 25px 176px 25px 0;
+}
+
+.logo-area h1:after {
+  content: '品优购';
+  display: none;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.search input {
+  width: 455px;
+  height: 35px;
+  border: 2px solid var(--cl);
+  margin-top: 25px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  /*盒子的宽高为文本设定的宽高*/
+}
+
+.search input::placeholder {
+  font-size: 13px;
+}
+
+.search button {
+  width: 84px;
+  height: 35px;
+  background-color: var(--cl);
+  color: #fff;
+  border: 0;
+  margin-left: -4px;
+}
+
+.cart {
+  width: 140px;
+  height: 35px;
+  margin: 30px 66px 0 0;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+  line-height: 35px;
+  /*垂直居中*/
+  text-align: center;
+  /*水平居中*/
+  position: relative;
+  /*相对定位*/
+}
+
+.cart i:first-child {
+  color: #da5555;
+  margin-right: 5px;
+}
+
+.cart span {
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-left: 5px;
+  background-color: #e60012;
+  color: #fff;
+  border-radius: 7px 7px 7px 0;
+  line-height: 14px;
+  position: absolute;
+  /*绝对定位*/
+  top: -6px;
+  right: 22px;
+}
+
+/* --------------------------------------------------------------------- */
+/* 导航栏 */
+nav {
+  width: 100%;
+  height: 45px;
+  border-bottom: 2px solid var(--cl);
+  font-size: 16px;
+}
+
+.nav-classic {
+  position: relative;
+}
+
+.nav-classic:hover .nav-classic-list {
+  display: block;
+  /* z-index: 1000px; */
+}
+
+.nav-title {
+  width: 210px;
+  height: 46px;
+  background-color: var(--cl);
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+}
+
+.nav-classic-list {
+  width: 210px;
+  height: 400px;
+  font-size: 14px;
+  background-color: var(--classic-bg);
+  position: absolute;
+  display: none;
+  /* z-index: 1000; */
+  /*分类子菜单定位参考*/
+}
+
+.nav-classic-list>li {
+  /* >：表示查找子元素*/
+  /*position: relative;相对自己本来的位置做位移。位移有4个方向时，left、right、top、bottom，left和right不能同时使用，top和bottom不能同时使用。*/
+  /* overflow: hidden;清除浮动 */
+  transition: all .5s;
+  /*过渡（补间）动画，all表示所有属性的改变，.5s表示动画过渡时间*/
+}
+
+.nav-classic-list>li:hover {
+  background-color: var(--bgc1);
+  /*在li标签上悬停时，li的背景色变成白色*/
+}
+
+.nav-classic-list>li:hover .classic-name {
+  color: var(--classic-bg);
+  /*在li标签上悬停时，改变.classic-name文字颜色*/
+  padding-left: 20px;
+}
+
+.nav-classic-list>li:hover .icon {
+  display: none;
+}
+
+.nav-classic-list>li:hover .nav-classic-item {
+  display: block;
+}
+
+.classic-name {
+  color: #fff;
+  padding: 10px;
+  transition: all .5s;
+}
+
+.classic-name span {
+  font-size: 14px;
+  /*利用iconfont加载的符号可以向文字一样处理*/
+  position: absolute;
+  /*绝对定位：相对于父元素位移，父元素一般要设置为相对定位。绝对定位会脱离文档流，所以必须在父元素上清除浮动。*/
+  right: 10px;
+}
+
+.nav-classic-item {
+  width: 520px;
+  height: 400px;
+  background-color: var(--bgc1);
+  display: none;
+  left: 210px;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
+}
+
+.nav-classic-item li:hover .goods-name {
+  color: #999;
+}
+
+.nav-classic-item img {
+  height: 44px;
+  margin: 10px 10px 10px 15px;
+}
+
+.goods-name {
+  position: relative;
+  top: -25px;
+}
+
+.nav-main {
+  overflow: hidden;
+  position: relative;
+  bottom: -10px;
+}
+
+.nav-main li {
+  margin: 0 25px;
+  float: left;
+}
+
+.nav-main li:first-child {
+  margin-left: 30px;
+}
+
+.nav-main a:hover {
+  color: #ccc;
+}
+
+.nav-banner {
+  position: relative;
+}

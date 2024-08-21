@@ -1,0 +1,85 @@
+.product {
+  margin-top: 5px;
+}
+
+.product-title {
+  height: 35px;
+  line-height: 35px;
+  color: #666;
+  font-size: 14px;
+}
+
+.product-title i {
+  margin: 0px 10px;
+}
+
+.product-list {
+  margin-top: 10px;
+  display: flex;
+  /*弹性布局，默认横向排列，主要用于九宫格图像布局，它会自适应。*/
+  /* justify-content: space-between; */
+  /*将剩余的空间进行等分*/
+}
+
+.product-item {
+  width: 220px;
+  height: 285px;
+  margin-right: 20px;
+  background-color: var(--bgc1);
+  text-align: center;
+}
+
+.product-item img {
+  width: 144px;
+  height: 142px;
+  margin-top: 50px;
+}
+
+.pro-name {
+  font-style: 16px;
+}
+
+.pro-price {
+  line-height: 40px;
+  color: var(--classic-bg);
+}
+/* --------------------------------------------------------------------- */
+/* 分页栏 */
+.wrap {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.wrap .page {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.page>.pages {
+  height: 30px;
+  /* width: 160px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.pages a,
+.pages span {
+  font-size: 12px;
+  color: #ccc;
+  display: inline-block;
+}
+
+.pages a:first-child,
+.pages a:last-child {
+  line-height: 30px;
+  padding: 0px 15px;
+}
+
+.pages span {
+  padding: 0 15px;
+  line-height: 30px;
+  color: #fff;
+  background-color: var(--cl);
+}

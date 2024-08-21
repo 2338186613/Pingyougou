@@ -1,0 +1,452 @@
+/* 头部 */
+header {
+  position: relative;
+}
+
+/* 快捷菜单栏 */
+.shortcut {
+  width: 100%;
+  height: 33px;
+  background-color: #f1f1f1;
+  line-height: 33px;
+  /*垂直居中*/
+  font-size: 14px;
+  color: #333;
+}
+
+.welcome a {
+  color: var(--cl);
+  /*使用属性变量*/
+}
+
+.welcome a:hover {
+  color: #333;
+}
+
+.shortcut-right ul li {
+  float: left;
+  /*让li标签的内容排在一行上*/
+}
+
+/* .shortcut-right a{
+  color: #333;
+} */
+.shortcut-right a:hover {
+  color: #666;
+}
+
+.shortcut-right span {
+  margin: 0 10px 0 5px;
+  /* 设置外边距。margin：10px表示上下左右都为10px margin:10px 20px表示上下为10px，左右为20px；  margin：10px 20px 30px表示上为10px，左右为20px，下为30px；margin：10px 20px 30px 40px表示上为10px，右为20px，下为30px，左为40px*/
+}
+
+/* Logo区 */
+.logo-area {
+  overflow: hidden;
+  /*清除浮动*/
+}
+
+.logo-area h1 {
+  margin: 25px 176px 25px 0;
+}
+
+.logo-area h1:after {
+  content: '品优购';
+  display: none;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.search input {
+  width: 455px;
+  height: 35px;
+  border: 2px solid var(--cl);
+  margin-top: 25px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  /*盒子的宽高为文本设定的宽高*/
+}
+
+.search input::placeholder {
+  font-size: 13px;
+}
+
+.search button {
+  width: 84px;
+  height: 35px;
+  background-color: var(--cl);
+  color: #fff;
+  border: 0;
+  margin-left: -4px;
+}
+
+.cart {
+  width: 140px;
+  height: 35px;
+  margin: 30px 66px 0 0;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+  line-height: 35px;
+  /*垂直居中*/
+  text-align: center;
+  /*水平居中*/
+  position: relative;
+  /*相对定位*/
+}
+
+.cart i:first-child {
+  color: #da5555;
+  margin-right: 5px;
+}
+
+.cart span {
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-left: 5px;
+  background-color: #e60012;
+  color: #fff;
+  border-radius: 7px 7px 7px 0;
+  line-height: 14px;
+  position: absolute;
+  /*绝对定位*/
+  top: -6px;
+  right: 22px;
+}
+
+/* --------------------------------------------------------------------- */
+/* 导航栏 */
+nav {
+  width: 100%;
+  height: 45px;
+  border-bottom: 2px solid var(--cl);
+  font-size: 16px;
+}
+
+.nav-classic {
+  position: relative;
+}
+
+.nav-classic:hover .nav-classic-list {
+  display: block;
+  /* z-index: 1000px; */
+}
+
+.nav-title {
+  width: 210px;
+  height: 46px;
+  background-color: var(--cl);
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+}
+
+.nav-classic-list {
+  width: 210px;
+  height: 400px;
+  font-size: 14px;
+  background-color: var(--classic-bg);
+  position: absolute;
+  display: none;
+  /* z-index: 1000; */
+  /*分类子菜单定位参考*/
+}
+
+.nav-classic-list>li {
+  /* >：表示查找子元素*/
+  /*position: relative;相对自己本来的位置做位移。位移有4个方向时，left、right、top、bottom，left和right不能同时使用，top和bottom不能同时使用。*/
+  /* overflow: hidden;清除浮动 */
+  transition: all .5s;
+  /*过渡（补间）动画，all表示所有属性的改变，.5s表示动画过渡时间*/
+}
+
+.nav-classic-list>li:hover {
+  background-color: var(--bgc1);
+  /*在li标签上悬停时，li的背景色变成白色*/
+}
+
+.nav-classic-list>li:hover .classic-name {
+  color: var(--classic-bg);
+  /*在li标签上悬停时，改变.classic-name文字颜色*/
+  padding-left: 20px;
+}
+
+.nav-classic-list>li:hover .icon {
+  display: none;
+}
+
+.nav-classic-list>li:hover .nav-classic-item {
+  display: block;
+}
+
+.classic-name {
+  color: #fff;
+  padding: 10px;
+  transition: all .5s;
+}
+
+.classic-name span {
+  font-size: 14px;
+  /*利用iconfont加载的符号可以向文字一样处理*/
+  position: absolute;
+  /*绝对定位：相对于父元素位移，父元素一般要设置为相对定位。绝对定位会脱离文档流，所以必须在父元素上清除浮动。*/
+  right: 10px;
+}
+
+.nav-classic-item {
+  width: 520px;
+  height: 400px;
+  background-color: var(--bgc1);
+  display: none;
+  left: 210px;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
+}
+
+.nav-classic-item li:hover .goods-name {
+  color: #999;
+}
+
+.nav-classic-item img {
+  height: 44px;
+  margin: 10px 10px 10px 15px;
+}
+
+.goods-name {
+  position: relative;
+  top: -25px;
+}
+
+.nav-main {
+  overflow: hidden;
+  position: relative;
+  bottom: -10px;
+}
+
+.nav-main li {
+  margin: 0 25px;
+  float: left;
+}
+
+.nav-main li:first-child {
+  margin-left: 30px;
+}
+
+.nav-main a:hover {
+  color: #ccc;
+}
+
+.nav-banner {
+  position: relative;
+}
+
+/* -------------------------------------------------------------------- */
+/* 主体 */
+.product {
+  margin-top: 5px;
+}
+
+.product-title {
+  height: 35px;
+  line-height: 35px;
+  color: #666;
+  font-size: 14px;
+}
+
+.product-title i {
+  margin: 0px 10px;
+}
+
+.product-list {
+  margin-top: 10px;
+  display: flex;
+  /*弹性布局，默认横向排列，主要用于九宫格图像布局，它会自适应。*/
+  /* justify-content: space-between; */
+  /*将剩余的空间进行等分*/
+}
+
+.product-item {
+  width: 220px;
+  height: 285px;
+  margin-right: 20px;
+  background-color: var(--bgc1);
+  text-align: center;
+}
+
+.product-item img {
+  width: 144px;
+  height: 142px;
+  margin-top: 50px;
+}
+
+.pro-name {
+  font-style: 16px;
+}
+
+.pro-price {
+  line-height: 40px;
+  color: var(--classic-bg);
+}
+/* --------------------------------------------------------------------- */
+/* 分页栏 */
+.wrap {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.wrap .page {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.page>.pages {
+  height: 30px;
+  /* width: 160px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.pages a,
+.pages span {
+  font-size: 12px;
+  color: #ccc;
+  display: inline-block;
+}
+
+.pages a:first-child,
+.pages a:last-child {
+  line-height: 30px;
+  padding: 0px 15px;
+}
+
+.pages span {
+  padding: 0 15px;
+  line-height: 30px;
+  color: #fff;
+  background-color: var(--cl);
+}
+
+/* --------------------------------------------------------------------- */
+/* footer */
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  margin-top: 20px;
+
+}
+
+.service,
+.help {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  padding: 30px 0;
+}
+
+/* 
+  精灵图：Sprite（雪碧图），把一些小图标文件放在一个文件中（该文件的格式只能是.png（背景透明）），目的是为了减少向服务器发请求的次数，从而提升网站性能。
+  精灵图操作步骤：
+    1）绘制精灵图（借助ps），保存为.png文件；
+    2）用background加载精灵图（不能用img标签加载）；
+      url（精灵图地址）no-repeat x坐标 y坐标
+      注意：必须要设置需要获取的图标的宽高。
+*/
+.service li {
+  width: 190px;
+}
+
+.service li .service-img {
+  width: 50px;
+  height: 50px;
+  background: url(../../images/icons.png) no-repeat;
+  float: left;
+  margin-right: 5px;
+}
+
+.service li:nth-child(1) .service-img {
+  background-position: -252px -3px;
+}
+
+.service li:nth-child(2) .service-img {
+  background-position: -255px -54px;
+}
+
+.service li:nth-child(3) .service-img {
+  background-position: -257px -105px;
+}
+
+.service li:nth-child(4) .service-img {
+  background-position: -257px -157px;
+}
+
+.service li:nth-child(5) .service-img {
+  background-position: -256px -208px;
+}
+
+.service-title {
+  line-height: 1.8;
+}
+
+.help {
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+/* .help dl:last-child{
+  text-align: center;
+} */
+.help dt {
+  font-size: 16px;
+}
+
+.help dt,
+.help dd {
+  line-height: 1.7;
+}
+
+.help dd:hover a {
+  color: #999;
+}
+
+.link-copyright {
+  padding: 20px 0 30px;
+  text-align: center;
+  color: #666;
+}
+
+.link-copyright a {
+  color: #666;
+}
+
+.link-copyright a:hover {
+  color: #999;
+}
+
+.link {
+  line-height: 3;
+}
+
+.link li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.link li:not(:first-child)::before {
+  content: "";
+  /*content不能省略，否则伪元素会失效*/
+  display: block;
+  width: 1px;
+  height: 12px;
+  border-right: 1px solid #999;
+  position: relative;
+  /*调整竖线位置（相对原来位置进行调整）*/
+  left: -8px;
+  top: 27px;
+}

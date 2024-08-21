@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购">
+  <meta name="description" content="品优购-专业的综合网上购物商城">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <title>品优购-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</title>
+  <link rel="shortcut icon" href="./../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./../style/reset.css">
+  <link rel="stylesheet" href="./../style/common.css">
+  <link rel="stylesheet" href="./../style/iconfont.css">
+  <link rel="stylesheet" href="./../style/public/header.css">
+  <link rel="stylesheet" href="./../style/public/footer.css">
+  <link rel="stylesheet" href="./../style/details.css">
+</head>
+
+<body>
+  <script src="../javascript/header.js"></script>
+  <main class="center">
+    <!-- 面包屑导航 -->
+    <div class="shop-title">
+      <ul>
+        <li><a href="">首页<span>&gt;</span></a></li>
+        <li><a href="">手机<span>&gt;</span></a></li>
+        <li>HUAWEI Mate系列<span>&gt;</span></li>
+        <li>HUAWEI Mate 40</li>
+      </ul>
+    </div>
+    <!-- 商品信息 -->
+    <div class="pro-info center">
+      <!-- 图片 -->
+      <div class="pic fl">
+        <div class="pro-info-img">
+          <img src="../images/详情页/mate40_1.png" alt="展示图">
+        </div>
+        <div class="pro-info-list">
+          <a href="javascript:;" class="list-prov"></a>
+          <div class="list-item">
+            <ul class="list">
+              <li><img class="current" src="../images/详情页/mate40_1_800.png" alt=""></li>
+              <li><img src="../images/详情页/mate40_2_800.png" alt=""></li>
+              <li><img src="../images/详情页/mate40_3_800.png" alt=""></li>
+              <li><img src="../images/详情页/mate40_4_800.png" alt=""></li>
+              <li><img src="../images/详情页/mate40_5_800.png" alt=""></li>
+            </ul>
+          </div>
+          <a href="javascript:;" class="list-next"></a>
+        </div>
+      </div>
+      <!-- 详情 -->
+      <div class="part fr">
+        <h5>HUAWEI Mate 40 Pro</h5>
+        <div class="summary">
+          <div class="part-mary">
+            <dl>
+              <dt>价格</dt>
+              <dd>
+                <i class="price">￥6999.00</i>
+              </dd>
+            </dl>
+          </div>
+          <div class="spec">
+            <div class="spec1">
+              <dl>
+                <dt>颜色</dt>
+                <dd>
+                  <a class="current" value_id="77" href="javascript:;">亮黑色</a>
+                  <a value_id="78" href="javascript:;">釉白色</a>
+                  <a value_id="79" href="javascript:;">秘银色</a>
+                  <a value_id="80" href="javascript:;">夏日胡杨</a>
+                  <a value_id="81" href="javascript:;">秋日胡杨</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec2">
+              <dl>
+                <dt>版本</dt>
+                <dd>
+                  <a class="current" value_id="82" href="javascript:;">5G全网通 8GB+256GB</a>
+                  <a value_id="83" href="javascript:;">5G全网通 8GB+512GB</a>
+                  <a value_id="84" href="javascript:;">5G全网通 8GB+128GB</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="part-ord">
+          <div class="part-inp">
+            <input type="text" value="1" id="number">
+            <a href="javascript:;" class="add-text">+</a>
+            <a href="javascript:;" class="low-text">-</a>
+          </div>
+          <a href="javascript:;" class="part-sub">加入购物车</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 商品简介和属性 -->
+    <div class="intro-attr">
+      <ul class="intro-attr-tab">
+        <li class="current">商品介绍</li>
+        <li class="">商品属性</li>
+      </ul>
+      <div class="pro-intro">
+        <img src="../images/详情页/介绍1.jpg" alt="">
+        <img src="../images/详情页/介绍2.jpg" alt="">
+        <img src="../images/详情页/介绍3.jpg" alt="">
+        <img src="../images/详情页/介绍4.jpg" alt="">
+        <img src="../images/详情页/介绍5.jpg" alt="">
+        <img src="../images/详情页/介绍6.jpg" alt="">
+        <img src="../images/详情页/介绍7.jpg" alt="">
+      </div>
+      <div class="pro-attr" style="display: none;">
+        <ul>
+          <li>版本类型: 中国大陆</li>
+          <li>操作系统: EMUI 11.0</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script src="../javascript/footer.js"></script>
+  <script src="../javascript/jquery.js"></script>
+  <script>
+    // 展示图选择
+    var list = document.querySelector('.list'),
+      imgs = list.querySelectorAll('img'),
+      img = document.querySelector('.pro-info-img img'),
+      detail = document.querySelector('.pro-info-img'),
+      pic = document.querySelector('.pic .pro-info-img');
+    list.addEventListener('mousemove', function (e) {
+      if (e.target.tagName == 'IMG') {
+        img.src = e.target.src;
+        detail.style.backgroundImage = 'url(' + e.target.src + ')'
+        imgs.forEach(function (item) {
+          item.className = '';
+        })
+        e.target.className = 'current'
+      }
+    })
+    // 放大镜
+    pic.addEventListener('mousemove', function (e) {
+      var x = e.clientX,
+        y = e.clientY,
+        cx = pic.getBoundingClientRect().left,
+        cy = pic.getBoundingClientRect().top;
+      tx = x - cx;
+      ty = y - cy;
+      detail.style.backgroundPosition = tx / 400 * 100 + '% ' + ty / 400 * 100 + '%';
+    })
+
+    //图片预览小图移动效果,页面加载时触发
+    var tempLength = 0, //临时变量,当前移动的长度
+      viewNum = 4, //设置每次显示图片的个数量
+      moveNum = 2, //每次移动的数量
+      moveTime = 300, //移动速度,毫秒
+      scrollDiv = $(".pro-info-list .list-item ul"), //进行移动画的容器
+      scrollItems = $(".pro-info-list .list-item ul img"), //动容器里的集合
+      moveLength = scrollItems.eq(0).width() * moveNum, //计算次移动的长度
+      countLength = (scrollItems.length - viewNum) * scrollItems.eq(0).width(); //计算总长度,总个数*单个长度
+
+    //下一张
+    $(".pro-info-list .list-next").on("click", function () {
+      if (tempLength < countLength) {
+        if ((countLength - tempLength) > moveLength) {
+          scrollDiv.animate({ left: "-=" + moveLength + "px" }, moveTime);
+          tempLength += moveLength;
+        } else {
+          scrollDiv.animate({ left: "-=" + (countLength - tempLength) + "px" }, moveTime);
+          tempLength += (countLength - tempLength);
+        }
+      }
+    });
+    //上一张
+    $(".pro-info-list .list-prov").on("click", function () {
+      if (tempLength > 0) {
+        if (tempLength > moveLength) {
+          scrollDiv.animate({ left: "+=" + moveLength + "px" }, moveTime);
+          tempLength -= moveLength;
+        } else {
+          scrollDiv.animate({ left: "+=" + tempLength + "px" }, moveTime);
+          tempLength = 0;
+        }
+      }
+    });
+
+    // 价格修改
+    // 规格值ids 到 规格商品id的映射关系
+    var valueIdsMap = { "77_82": { "id": 47, "price": "6999.00" }, "77_83": { "id": 48, "price": "7999.00" }, "77_84": { "id": 49, "price": "6499.00" }, "78_82": { "id": 50, "price": "6999.00" }, "78_83": { "id": 51, "price": "7999.00" }, "78_84": { "id": 52, "price": "6499.00" }, "79_82": { "id": 53, "price": "6999.00" }, "79_83": { "id": 54, "price": "7999.00" }, "79_84": { "id": 55, "price": "6499.00" }, "80_82": { "id": 56, "price": "6999.00" }, "80_83": { "id": 57, "price": "7999.00" }, "80_84": { "id": 58, "price": "6499.00" }, "81_82": { "id": 59, "price": "6999.00" }, "81_83": { "id": 60, "price": "7999.00" }, "81_84": { "id": 61, "price": "6499.00" } };
+    // 规格值选中效果
+    $('.spec').find('a').click(function () {
+      // 给当前行标签 移除current这个class
+      $(this).siblings().removeClass('current');
+      // 再给当前点击的a标签加上current类
+      $(this).addClass('current');
+      // 获取选中的规格值的组合
+      var valueIds = '';
+      $('.spec .current').each(function (i, v) {
+      // console.log($(v).attr('value_id') + '_');
+        valueIds += $(v).attr('value_id') + '_';
+      });
+      // 去除最后一个下划线 valueIds = '19_21_' 转换成valueIds = '19_21'
+      valueIds = valueIds.slice(0, -1);
+      // 获取对应的商品SKU的id值
+      var specGoodsPrice = valueIdsMap[valueIds].price;
+      // 将价格显示到页面
+      $('.price').html('￥' + specGoodsPrice);
+    });
+
+    // 数量增减点击事件
+    // 加号
+    $('.add-text').click(function () {
+      // 获取数量
+      let number = parseInt($('#number').val());
+      // 计算新的数量
+      number += 1;
+      // 展示新的数量
+      $('#number').val(number);
+    });
+    // 减号
+    $('.low-text').click(function () {
+      // 获取数量
+      let number = parseInt($('#number').val());
+      // 计算新的数量
+      if (number == 1) return;
+      number -= 1;
+      // 展示新的数量
+      $('#number').val(number);
+    });
+
+    // 商品介绍和属性点击事件
+    $('.intro-attr-tab li').eq(0).click(function () {
+      $('.pro-intro').show();
+      $('.pro-attr').hide();
+      $('.intro-attr-tab li').removeAttr('class');
+      $(this).attr('class', 'current');
+    })
+    $('.intro-attr-tab li').eq(1).click(function () {
+      $('.pro-intro').hide();
+      $('.pro-attr').show();
+      $('.intro-attr-tab li').removeAttr('class');
+      $(this).attr('class', 'current');
+    })
+
+    // 添加商品到购物车
+    // 本地存储：localStorage（永久存储）、sessionStorage（会话存储）
+    $('.part-sub').click(function () {
+      let goodsColor = '', goodsVersion = '';
+      for (item of $('.spec1 a')) {
+        if ($(item).attr('class') == 'current') {
+          goodsColor = $(item).text();
+        }
+      }
+      for (item of $('.spec2 a')) {
+        if ($(item).attr('class') == 'current') {
+          goodsVersion = $(item).text();
+        }
+      }
+      let cart = {
+        goodsName: $('.part h5').text(),
+        goodsImg: $('.list li').eq(0).find('img').attr('src'),
+        goodsInfo: '颜色：' + goodsColor + ' 版本：' + goodsVersion,
+        goodsPrice: parseFloat($('.price').text().substr(1)),
+        goodsQuaitity: parseInt($('#number').val()) 
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      setTimeout(function(){
+        location.href='./addcart.html'
+      },1000)
+    })
+
+  </script>
+</body>
+
+</html>

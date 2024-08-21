@@ -1,0 +1,120 @@
+/* footer */
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  margin-top: 20px;
+  /* float: left; */
+}
+
+.service,
+.help {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  padding: 30px 0;
+}
+
+/* 
+  精灵图：Sprite（雪碧图），把一些小图标文件放在一个文件中（该文件的格式只能是.png（背景透明）），目的是为了减少向服务器发请求的次数，从而提升网站性能。
+  精灵图操作步骤：
+    1）绘制精灵图（借助ps），保存为.png文件；
+    2）用background加载精灵图（不能用img标签加载）；
+      url（精灵图地址）no-repeat x坐标 y坐标
+      注意：必须要设置需要获取的图标的宽高。
+*/
+.service li {
+  width: 190px;
+}
+
+.service li .service-img {
+  width: 50px;
+  height: 50px;
+  background: url(../../images/icons.png) no-repeat;
+  float: left;
+  margin-right: 5px;
+}
+
+.service li:nth-child(1) .service-img {
+  background-position: -252px -3px;
+}
+
+.service li:nth-child(2) .service-img {
+  background-position: -255px -54px;
+}
+
+.service li:nth-child(3) .service-img {
+  background-position: -257px -105px;
+}
+
+.service li:nth-child(4) .service-img {
+  background-position: -257px -157px;
+}
+
+.service li:nth-child(5) .service-img {
+  background-position: -256px -208px;
+}
+
+.service-title {
+  line-height: 1.8;
+}
+
+.help {
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+/* .help dl:last-child{
+  text-align: center;
+} */
+.help dt {
+  font-size: 16px;
+}
+
+.help dt,
+.help dd {
+  line-height: 1.7;
+}
+
+.help dd:hover a {
+  color: #999;
+}
+
+.link-copyright {
+  padding: 20px 0 30px;
+  text-align: center;
+  color: #666;
+}
+
+.link-copyright a {
+  color: #666;
+}
+
+.link-copyright a:hover {
+  color: #999;
+}
+
+.link {
+  line-height: 3;
+}
+
+.link li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.link li:not(:first-child)::before {
+  content: "";
+  /*content不能省略，否则伪元素会失效*/
+  display: block;
+  width: 1px;
+  height: 12px;
+  border-right: 1px solid #999;
+  position: relative;
+  /*调整竖线位置（相对原来位置进行调整）*/
+  left: -8px;
+  top: 27px;
+}

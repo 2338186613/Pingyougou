@@ -1,0 +1,26 @@
+body{
+  color: #333;
+  font-family: 微软雅黑;
+}
+a{
+  color: #333;
+}
+.center{
+  width: 1200px;/* 版心 */
+  margin: 0 auto;/* 盒子（一个标签就是一个盒子）水平居中 */
+  /* background-color: brown; */
+}
+/* 左浮动 */
+.fl{
+  float: left;
+}
+/* 右浮动 */
+.fr{
+  float: right;
+}
+:root{  /*设置属性值变量,变量以--开头*/
+  --bgc:#f1f1f1;
+  --cl:#b1191a;
+  --classic-bg:#c81623;
+  --bgc1:#f7f7f7;
+}

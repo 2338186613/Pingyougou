@@ -1,0 +1,126 @@
+/* logo区 */
+header{
+  margin-bottom: 20px;
+}
+.logo-area {
+  overflow: hidden;
+  border-bottom: 2px solid var(--classic-bg);
+}
+
+.logo-area h1 {
+  margin: 15px 0px 6px 0;
+}
+
+.logo-area h1:after {
+  content: '品优购';
+  display: none;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+/* 注册区 */
+main{
+  border: 1px solid #ccc;
+  width: 1200px;
+  height: 520px;
+  margin: 0 auto;
+}
+.reg-title{
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background-color:#ececec;
+  line-height: 40px;
+  color: #666;
+}
+.newUser{
+  font-size: 18px;
+}
+.user{
+  font-size: 14px;
+}
+.newUser, .user{
+  padding: 0 10px;
+}
+.user a{
+  color: var(--classic-bg);
+}
+
+.reg-body{
+  margin:40px auto;
+  height: 400px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  color: #666;
+  font-size: 12px;
+}
+.reg-body input{
+  padding-left: 5px;
+  border: 1px solid #ccc;
+}
+.reg-body ul{
+  height: 300px;
+  width: 400px;
+}
+.reg-body li{
+  margin-bottom: 15px;
+}
+.reg-body label.subText{
+  position: relative; /* 相对定位 */
+  top: -4px;
+  left: 2px;
+}
+.reg-body li:first-child>label{
+  margin-left: 12px;
+}
+.reg-body li>.Ecode{
+  margin-left: -12px;
+}
+.reg-body .inp{
+  width: 240px;
+  height: 34px;
+}
+.reg-body .code{
+  height: 34px;
+  width: 146px;
+}
+.reg-body .but{
+  height: 34px;
+  width: 90px;
+  border: 1px solid #000;
+}
+.reg-body .cbox{
+  width: 18px;
+  height: 18px;
+  margin: 20px 0px 0px 10px;
+  border: 1px solid #000;
+  /* display: inline-block; */
+}
+/* .reg-body .subText{
+  padding-bottom: 10px;
+} */
+.reg-body .subText>a{
+  color: #1ba1e6;
+}
+.reg-body li:last-child input{
+  padding-left: 0;
+  width: 200px;
+  height: 34px;
+  background-color:var(--classic-bg);
+  color: #fff;
+  font-size: 14px;
+  margin: 20px 0 0 64px;
+}
+.reg-body input{
+  margin-left: 10px;
+}
+/* footer */
+footer{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}
+footer p{
+  margin-bottom: 12px;
+}
+

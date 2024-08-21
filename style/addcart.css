@@ -1,0 +1,68 @@
+/* 主体 */
+main {
+  overflow: hidden;
+}
+
+.title-name {
+  height: 50px;
+  font-size: 16px;
+  color: #6AAF04;
+  padding: 10px 0;
+}
+
+.body-details {
+  float: left;
+  height: 60px;
+  width: 500px;
+}
+
+.body-details img {
+  height: 60px;
+  float: left;
+}
+
+.body-details .body-list {
+  float: left;
+  margin-left: 10px;
+}
+
+.body-list .list-name {
+  height: 28px;
+  line-height: 28px;
+}
+
+.body-list .list-version {
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.body-sub {
+  float: right;
+}
+
+.body-sub a:first-child {
+  display: inline-block;
+    width: 164px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #e1e1e1;
+}
+.body-sub a:last-child{
+  display: inline-block;
+    width: 164px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #b1191a;
+    border: 1px solid #e8351f;
+}

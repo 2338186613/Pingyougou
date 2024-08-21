@@ -1,0 +1,63 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul,img,a,span{
+  margin: 0;  /* 外边距 */
+  padding: 0; /* 内边距 */
+}
+
+body,button,input,select,textarea {
+  font: 14px/1.5 微软雅黑;  /* 字号为14px，行距1.5倍，字体为微软雅黑 */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;  /* 原始输出标题标签的默认字号 */
+}
+
+/* address,cite,dfn,em,var {
+  font-style: normal
+} */
+
+/* code,kbd,pre,samp {
+  font-family: courier new,courier,monospace
+}
+
+small {
+  font-size: 12px
+} */
+
+ol,ul {
+  list-style: none;  /* 去掉ol前的编号和ul前的点 */
+}
+
+a {
+  text-decoration: none; /* 去掉a标签的下划线 */
+  color: #333;
+}
+
+/* a:hover {
+  text-decoration: underline
+} */
+
+/* sup {
+  vertical-align: text-top
+}
+
+sub {
+  vertical-align: text-bottom
+} */
+
+/* legend {
+  color: #000
+} */
+
+img {
+  border: 0;    /* 兼容处理，在IE低版本中，图像会出现边框，0表示取消边框 */
+}
+
+button,input,select,textarea {
+  font-size: 100%;
+  outline: none; /* 取消表单组件的边框，none表示取消边框 */
+}
+
+table {
+  border-collapse: collapse; /* 设置表格为单线边框 */
+  border-spacing: 0;
+}

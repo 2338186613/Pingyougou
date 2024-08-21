@@ -1,0 +1,188 @@
+
+/* 主体 */
+.produce {
+  margin-top: 10px;
+  color: #666;
+}
+
+.produce-title span {
+  margin-left: 5px;
+}
+
+.form-title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background-color: var(--bgc);
+  height: 20px;
+  padding: 10px 0;
+  display: block;
+  font-size: 12px;
+  color: #666;
+  line-height: 20px;
+}
+
+.form-all {
+  float: left;
+}
+
+.form-all input {
+  float: left;
+  margin: 4px 0 0 10px;
+}
+
+.form-title ul>li {
+  float: left;
+}
+
+.form-title .form-item1 {
+  width: 24%;
+}
+
+.form-title .form-item {
+  width: 12.5%;
+}
+
+.tab-title {
+  height: 100px;
+  font-size: 12px;
+  color: #666;
+  border: 1px solid #ccc;
+  display: block;
+  padding: 10px 0px;
+  display: none;
+}
+
+.tab-title .tab-all input {
+  float: left;
+  margin-left: 10px;
+}
+
+.tab-title ul div,
+.tab-title ul div li,
+.tab-title ul>li {
+  float: left;
+}
+
+.tab-title img {
+  width: 100px;
+  height: 100px;
+}
+
+.tab-title .form-item1 {
+  width: 24%;
+}
+
+.tab-title .form-item {
+  width: 12.5%;
+}
+
+.tab-title .form-item {
+  font-size: 16px;
+}
+
+.tab-title .form-item:last-child a {
+  font-size: 12px;
+  color: #28a3ef
+}
+
+.tab-title .form-item:last-child a:hover {
+  color: #e33333;
+}
+
+.tab-title .part-inp {
+  float: left;
+  position: relative;
+}
+
+.tab-title .part-inp input {
+  width: 40px;
+  height: 34px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+.tab-title .part-inp .add-text {
+  width: 12px;
+  padding: 5px;
+  float: left;
+  color: #28a3ef;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+
+.tab-title .part-inp .low-text {
+  width: 12px;
+  padding: 5px;
+  float: left;
+  color: #28a3ef;
+  border: 1px solid #ddd;
+  border-right: 0;
+  text-align: center;
+}
+
+.medio-line {
+  border: 1px solid #ccc;
+}
+
+.form-set {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 60px;
+  /* padding: 15px 0; */
+  display: block;
+  font-size: 12px;
+  color: #666;
+  line-height: 60px;
+}
+
+.form-set input {
+  margin: 24px 0 0 10px;
+}
+
+.form-set .form-set-all {
+  float: left;
+}
+
+.form-set .set-sub {
+  height: 60px;
+  float: right;
+}
+
+.form-set ul>li {
+  margin-right: 15px;
+}
+
+.form-set ul>li:last-child {
+  line-height: 57px;
+}
+
+.form-set ul>li:last-child span {
+  color: rgb(200, 22, 35);
+  font-size: 16px;
+}
+
+.set-sub ul {
+  display: inline-block;
+}
+
+.set-sub ul>li {
+  float: left;
+}
+
+.set-sub .sub {
+  float: right;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: #e54346;
+}
+
+.set-sub .sub>a {
+  color: #fff;
+  padding: 18px 30px;
+}
+
+
